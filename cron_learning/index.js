@@ -5,13 +5,13 @@ const express = require('express');
 const app = express();
 
 const cronHello = async () => {
-    return new CronJob('*/5 * * * * *', function () {
+    return new CronJob('*/50 * * * * *', function () {
         console.log("hello")
     }, null, true);
 }
 
 const cronTest = async () => {
-    return new CronJob('*/10 * * * * *', function () {
+    return new CronJob('*/50 * * * * *', function () {
         console.log("==========test============")
     }, null, true);
 }
