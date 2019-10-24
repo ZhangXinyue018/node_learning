@@ -7,6 +7,7 @@ function forEach(items, callback) {
 }
 
 test("test first mock", () => {
+    // jest.fn is jest mock function
     const mockCallback = jest.fn(x => 42 + x);
     forEach([0, 1], mockCallback);
 
