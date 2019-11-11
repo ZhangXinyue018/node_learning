@@ -14,3 +14,5 @@ if (test[newValue.code]) {
 } else {
     console.log("no c");
 }
+
+console.log(5 >= "5")
